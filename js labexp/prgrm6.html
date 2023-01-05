@@ -1,0 +1,59 @@
+<html>
+<head>
+<script>
+function exam()
+{
+var m=0;
+if(document.examForm.one.value=="horizontal ruler")
+m=m+1;
+if(document.examForm.two.value=="6")
+m=m+1;
+if(document.examForm.three.value=="HTML, Head, Title, Body")
+m=m+1;
+if(document.examForm.four.value=="br tag")
+m=m+1;
+alert("Thankyou  for Attending the online exam \n Your score is:"+m+" out of 4");
+}
+</script>
+</head>
+<body bgcolor="moccasin">
+<form name="examForm" onsubmit="return exam()" method="get">
+<h1><u><center>EXAMINATION</center></u></h1>
+Enter your full name:  <input type="text" name="name"/><br>
+Enter your Reg number: <input type="text" name="name"/>
+<p> 
+1) The hr tag in HTML is used for -<br>
+<input type="radio" name="one" value="new line">new line<br>
+<input type="radio" name="one" value="vertical ruler">vertical ruler<br>
+<input type="radio" name="one" value="new paragraph">new paragraph<br>
+<input type="radio" name="one" value="horizontal ruler">horizontal ruler<br>
+</p>
+<p>
+2) How many heading tags are there in HTML? <br>
+<input type="radio" name="two" value="2">2<br>
+<input type="radio" name="two" value="3">3<br>
+<input type="radio" name="two" value="5">5<br>
+<input type="radio" name="two" value="6">6<br>
+</p>
+<p>
+3)The correct sequence of HTML tags for starting a webpage is <br>
+<input type="radio" name="three" value="Head, Title, HTML, body"> Head, Title, HTML, body<br>
+<input type="radio" name="three" value="HTML, Body, Title, Head">HTML, Body, Title, Head<br>
+<input type="radio" name="three" value="HTML, Head, Title, Body">HTML, Head, Title, Body<br>
+<input type="radio" name="three" value="None of these">none of these<br>
+</p>
+<p>
+4) Which of the following tag is used to insert a line-break in HTML?<br>
+<input type="radio" name="four" value="br tag">br tag<br>
+<input type="radio" name="four" value="a tag">a tag<br>
+<input type="radio" name="four" value="pre tag">pre tag<br>
+<input type="radio" name="four" value="b tag">b tag<br>
+</p>
+<p>
+<center>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</center>
+</p>
+</body>
+</html>
